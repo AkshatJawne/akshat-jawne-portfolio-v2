@@ -1,109 +1,110 @@
 .education {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
   }
   
   .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 2rem;
   }
   
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
-    
-    .icon {
-      color: #667eea;
-    }
-    
-    .title {
-      font-size: 3rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
   }
   
   .content {
     background: white;
-    border-radius: 20px;
-    padding: 3rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
   
   .timeline {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     
     &::before {
       content: '';
       position: absolute;
       left: 0;
-      top: 0;
+      top: 8px;
       height: 100%;
-      width: 2px;
-      background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+      width: 1px;
+      background: #0066CC;
+      opacity: 0.3;
     }
   }
   
   .marker {
     position: absolute;
-    left: -7px;
-    top: 0;
-    width: 14px;
-    height: 14px;
+    left: -4px;
+    top: 8px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     background: white;
-    border: 3px solid #667eea;
+    border: 2px solid #0066CC;
   }
   
   .details {
-    animation: fadeInUp 0.8s ease-out;
+    padding-left: 1rem;
   }
   
   .university {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
   }
   
   .degree {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0.5rem;
   }
   
   .period {
     color: rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
     margin-bottom: 2rem;
   }
   
-  .coursework {
-    .courseTitle {
+  .academicContent {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .section {
+    .sectionTitle {
       font-weight: 600;
       margin-bottom: 1rem;
-      color: rgba(0, 0, 0, 0.7);
+      color: #0066CC;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
   }
   
-  .courses {
+  .items {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
   }
   
-  .course {
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-    border: 1px solid rgba(102, 126, 234, 0.2);
+  .item {
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    background: rgba(0, 102, 204, 0.08);
+    border: 1px solid rgba(0, 102, 204, 0.15);
     font-size: 0.875rem;
-    transition: all 0.3s ease;
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
     
     &:hover {
+      background: rgba(0, 102, 204, 0.12);
       transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
     }
   }

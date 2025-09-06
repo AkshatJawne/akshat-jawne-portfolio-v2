@@ -5,13 +5,12 @@ import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
-import ParticleBackground from './components/ParticleBackground/ParticleBackground';
+import CubeAnimation from './components/CubeAnimation/CubeAnimation';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import { useLoading } from './hooks/useLoading';
-import './styles/global.scss';
 
 const App: React.FC = () => {
-  const isLoading = useLoading(2000);
+  const isLoading = useLoading(1500);
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -19,7 +18,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <ParticleBackground />
+      <CubeAnimation />
       <Layout>
         <Hero />
         <Experience />

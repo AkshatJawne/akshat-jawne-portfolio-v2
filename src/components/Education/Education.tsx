@@ -1,21 +1,19 @@
 import React from 'react';
-import { GraduationCap } from 'lucide-react';
 import styles from './Education.module.scss';
 
 const Education: React.FC = () => {
-  const courses = [
-    "Data Structures", "Algorithms", "Distributed Systems", 
-    "Networks", "Databases", "Operating Systems", 
-    "Concurrency", "Fullstack Development", "Machine Learning"
+  const coursework = [
+    "Data Structures", "Algorithms", "Operating Systems", "Networks", "Databases", "Concurrency", "Systems Programming"
+  ];
+  
+  const concepts = [
+    "Distributed Systems", "Fullstack Development", "System Design", "Machine Learning", "App Development", "Agile Software Development Life Cycle"
   ];
 
   return (
     <section id="education" className={styles.education}>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <GraduationCap className={styles.icon} size={28} />
-          <h2 className={styles.title}>Education</h2>
-        </div>
+        <h2 className={styles.title}>Education</h2>
         
         <div className={styles.content}>
           <div className={styles.timeline}>
@@ -25,14 +23,27 @@ const Education: React.FC = () => {
               <p className={styles.degree}>Bachelor of Applied Science in Computer Engineering</p>
               <p className={styles.period}>Sept 2022 – Apr 2027 | Waterloo, ON</p>
               
-              <div className={styles.coursework}>
-                <p className={styles.courseTitle}>Core Coursework:</p>
-                <div className={styles.courses}>
-                  {courses.map((course) => (
-                    <span key={course} className={styles.course}>
-                      {course}
-                    </span>
-                  ))}
+              <div className={styles.academicContent}>
+                <div className={styles.section}>
+                  <h4 className={styles.sectionTitle}>Coursework</h4>
+                  <div className={styles.items}>
+                    {coursework.map((course) => (
+                      <span key={course} className={styles.item}>
+                        {course}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className={styles.section}>
+                  <h4 className={styles.sectionTitle}>Concepts</h4>
+                  <div className={styles.items}>
+                    {concepts.map((concept) => (
+                      <span key={concept} className={styles.item}>
+                        {concept}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

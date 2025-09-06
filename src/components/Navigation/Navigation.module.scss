@@ -3,13 +3,13 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
     padding: 1.5rem 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   
     &.scrolled {
-      background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
       padding: 1rem 0;
     }
   }
@@ -25,54 +25,33 @@
   
   .logo {
     .logoText {
-      font-weight: 800;
-      font-size: 1.5rem;
-      letter-spacing: -0.05em;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
     }
   }
   
   .links {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   
   .link {
     background: none;
     border: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
+    padding: 0;
   
     &:hover {
-      color: #000;
+      color: #0066CC;
     }
   
     &.active {
-      color: #000;
-      
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: #000;
-        animation: slideIn 0.3s ease;
-      }
-    }
-  }
-  
-  @keyframes slideIn {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(1);
+      color: #0066CC;
     }
   }

@@ -1,4 +1,4 @@
-import React, {type ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import Navigation from '../Navigation/Navigation';
 import styles from './Layout.module.scss';
 
