@@ -1,5 +1,4 @@
 import React from 'react';
-import { skillColors } from '../../data/skills';
 import styles from './SkillTag.module.scss';
 
 interface SkillTagProps {
@@ -8,7 +7,7 @@ interface SkillTagProps {
 }
 
 const SkillTag: React.FC<SkillTagProps> = ({ skill, variant = 'default' }) => {
-  const color = skillColors[skill] || '#0066CC';
+  const color = '#0066CC';
   
   return (
     <span 
