@@ -1,0 +1,109 @@
+.education {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    
+    .icon {
+      color: #667eea;
+    }
+    
+    .title {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+  }
+  
+  .content {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    }
+  }
+  
+  .marker {
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #667eea;
+  }
+  
+  .details {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .university {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .degree {
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.5rem;
+  }
+  
+  .period {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+  }
+  
+  .coursework {
+    .courseTitle {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .course {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+    }
+  }
