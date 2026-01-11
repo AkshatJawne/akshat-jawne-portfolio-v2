@@ -5,7 +5,7 @@ export const experienceData: ExperienceItem[] = [
     company: "Sierra",
     companyUrl: "https://sierra.ai/",
     role: "Software Engineer Intern",
-    period: "Jan 2025 – Apr 2025",
+    period: "Jan 2026 – Apr 2026",
     location: "San Francisco, CA",
     description: "Agents",
     skills: ["Python", "TypeScript", "LLMs"]
