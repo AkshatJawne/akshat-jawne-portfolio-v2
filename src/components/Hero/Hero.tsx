@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
             <span className={styles.lastName}>Jawne</span>
           </h1>
           <div className={styles.bioLine}>
-            3rd Year Computer Engineering Student @ University of Waterloo
+            4th Year Computer Engineering Student @ University of Waterloo
           </div>
         </div>
         

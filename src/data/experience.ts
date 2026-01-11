@@ -2,10 +2,19 @@ import { type ExperienceItem } from '../types';
 
 export const experienceData: ExperienceItem[] = [
   {
+    company: "Sierra",
+    companyUrl: "https://sierra.ai/",
+    role: "Software Engineer Intern",
+    period: "Jan 2025 – Apr 2025",
+    location: "San Francisco, CA",
+    description: "Agents",
+    skills: ["Python", "TypeScript", "LLMs"]
+  },
+  {
     company: "Vivid Seats",
     companyUrl: "https://www.vividseats.com",
     role: "Software Engineer Intern",
-    period: "Jan 2025 – Aug 2025",
+    period: "Jan 2025 – Dec 2025",
     location: "Chicago, IL",
     description: "Product, B2C Engineering",
     skills: ["Python", "AWS", "Node.js", "Java", "Datadog"]
